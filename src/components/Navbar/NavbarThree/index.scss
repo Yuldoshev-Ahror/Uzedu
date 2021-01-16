@@ -1,0 +1,167 @@
+.navbarthree-container {
+  width: 100%;
+  .navbarthree-content {
+    max-width: 1140px;
+    width: 90%;
+    margin: auto;
+    border-top: 0.25px solid rgb(221, 221, 221);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    .navbarthree-menu {
+      & > ul {
+        & > li {
+          display: inline-block;
+          padding: 5px 15px;
+          color: #363636;
+          font-weight: 600;
+          font-size: 14px;
+          border-bottom-width: 4px;
+          border-bottom-style: solid;
+          border-bottom-color: transparent;
+          position: relative;
+          cursor: pointer;
+          &:hover {
+            color: #000000;
+            border-bottom-color: rgb(210, 183, 98);
+            div {
+              height: 100%;
+              transition: height 0.5s ease-in-out;
+            }
+            ul {
+              display: block;
+            }
+          }
+          div {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 350px;
+            background: transparent;
+            padding-top: 10px;
+            height: 0;
+            // overflow: hidden;
+            transition: height 0.5s ease-in-out;
+          }
+          ul {
+            background-color: #fff;
+            width: 100%;
+            display: none;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            li {
+              padding: 7px 12px;
+              color: rgb(100, 100, 100);
+              font-size: 13px;
+
+              a {
+                color: #363636;
+              }
+              p {
+                transition: transform 0.3s ease-in-out;
+              }
+              &:hover {
+                font-weight: 500;
+                background-color: rgb(210, 183, 98);
+                a {
+                  color: #fff;
+                }
+                p {
+                  transform: translateX(15px);
+                }
+              }
+            }
+          }
+          i {
+            margin-left: 3px;
+          }
+        }
+      }
+    }
+    .navbarthree-mobile {
+      width: 100%;
+      display: none;
+      .navbarthree-bar {
+        display: none;
+        width: 100%;
+        padding-right: 15px;
+        div {
+          width: 100%;
+          display: flex;
+          justify-content: flex-end;
+        }
+
+        cursor: pointer;
+        i {
+          font-size: 25px;
+          color: rgb(95, 95, 95);
+        }
+      }
+      ul {
+        display: none;
+        width: 100%;
+        padding: 15px 0;
+        li {
+          width: 100%;
+          padding: 7px 12px;
+          border-bottom-width: 4px;
+          border-bottom-style: solid;
+          border-bottom-color: transparent;
+          transition: background-color 0.1s ease-in-out;
+
+          div:nth-child(1) {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+          }
+          div:nth-child(2) {
+            display: flex;
+            justify-content: flex-end;
+            i {
+              font-size: 25px;
+            }
+          }
+          cursor: pointer;
+          &:hover {
+            background-color: #f1f1f1;
+            border-bottom-color: rgb(210, 183, 98);
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 1060px) {
+    .navbarthree-content .navbarthree-menu {
+      & > ul {
+        & > li {
+          div {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 350px;
+            background: transparent;
+            padding-top: 10px;
+            height: 0;
+            // overflow: hidden;
+            transition: height 0.5s ease-in-out;
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .navbarthree-content .navbarthree-menu {
+      display: none;
+    }
+    .navbarthree-content .navbarthree-mobile {
+      display: block;
+    }
+    .navbarthree-content .navbarthree-mobile .navbarthree-bar {
+      display: block;
+    }
+  }
+}
+
+.display-block {
+  display: block !important;
+}
