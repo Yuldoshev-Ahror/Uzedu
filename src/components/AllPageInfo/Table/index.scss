@@ -1,0 +1,42 @@
+.allpageinfo-tabe-container {
+  width: 100%;
+  .allpageinfo-tabe-content {
+    max-width: 1140px;
+    width: 100%;
+    margin: auto;
+    padding: 45px 0;
+    table {
+      width: 100%;
+
+      td {
+        color: #808080;
+        font-size: 14px;
+        font-weight: 500;
+        padding: 7px 5px;
+      }
+      & > tr:nth-child(2n) {
+        background-color: rgb(246, 246, 246);
+      }
+      & > tr:nth-child(2n - 1) {
+        background-color: rgb(233, 233, 233);
+      }
+      & > tr:first-child {
+        background-color: rgb(235, 221, 99);
+        color: #fff;
+        font-size: 14px;
+
+        th {
+          font-weight: 600;
+          padding: 7px 5px;
+        }
+      }
+    }
+    table,
+    th,
+    td {
+      border: 1px solid rgb(211, 184, 97);
+      border-collapse: collapse;
+      text-align: center;
+    }
+  }
+}

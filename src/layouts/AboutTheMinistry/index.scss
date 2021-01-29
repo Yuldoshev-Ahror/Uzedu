@@ -1,0 +1,85 @@
+.abouttheministry-container {
+  width: 100%;
+  .abouttheministry-content {
+    max-width: 1140px;
+    width: 90%;
+    margin: auto;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    .abouttheministry-title {
+      width: 100%;
+    }
+  }
+  .abouttheministry-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 35px;
+    .pc-block {
+      display: block;
+    }
+    .mobile-block {
+      display: none;
+      padding-top: 25px;
+    }
+    .abouttheministry-abz {
+      padding-left: 15px;
+    }
+    img {
+      width: 100%;
+    }
+    h1 {
+      color: rgb(85, 85, 85);
+      font-size: 32px;
+      font-weight: 800;
+
+      span {
+        color: rgb(211, 184, 98);
+      }
+    }
+    h3 {
+      color: rgb(85, 85, 85);
+      font-size: 18px;
+      line-height: 26px;
+      padding-top: 15px;
+    }
+    p {
+      color: rgb(128, 128, 128);
+      font-size: 14px;
+      padding-top: 25px;
+      i {
+        padding-left: 15px;
+        padding-right: 5px;
+        color: #000;
+        font-size: 11px;
+        font-weight: bold;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .abouttheministry-grid {
+      grid-template-columns: 1fr;
+      .mobile-block {
+        display: block;
+      }
+      .pc-block {
+        display: none;
+      }
+      .abouttheministry-abz {
+        padding: 0;
+      }
+      h1 {
+        padding-top: 15px;
+      }
+    }
+    .abouttheministry-bottom {
+      width: 80%;
+    }
+  }
+
+  @media only screen and (max-width: 425px) {
+    .abouttheministry-bottom {
+      width: 100%;
+    }
+  }
+}

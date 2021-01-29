@@ -1,0 +1,116 @@
+.homepageeight-container {
+  width: 100%;
+  .homepageeight-content {
+    max-width: 1140px;
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 25px 0;
+
+    .homepageeight-title {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-items: center;
+      align-items: center;
+      padding: 20px 0;
+      h3 {
+        color: rgb(107, 107, 107);
+        font-size: 20px;
+        font-weight: 700;
+      }
+      div {
+        width: 12%;
+        border: 2px solid rgb(211, 184, 98);
+      }
+    }
+
+    .homepageeight-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      padding: 35px 0;
+
+      .homepageeight-box {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        justify-items: start;
+        width: 80%;
+        margin: auto;
+
+        div {
+          &:nth-child(1) {
+            color: #d8ab1d;
+            font-size: 40px;
+            line-height: 68px;
+            position: relative;
+            padding-right: 25px;
+            &::before {
+              content: "";
+              display: block;
+              position: absolute;
+              top: 18%;
+              left: 0;
+              width: 85%;
+              height: 42%;
+              border-right: 3px solid #d8ab1d;
+            }
+          }
+
+          &:nth-child(2) {
+            font-size: 14px;
+            color: #808080;
+            line-height: 24px;
+            font-style: normal;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 1070px) {
+    .homepageeight-content .homepageeight-grid {
+      grid-template-columns: 1fr 1fr;
+      grid-row-gap: 35px;
+      .homepageeight-box {
+        align-items: center;
+        div {
+          &:nth-child(1) {
+            &::before {
+              content: "";
+              display: block;
+              position: absolute;
+              top: 18%;
+              left: 0;
+              width: 85%;
+              height: 65%;
+              border-right: 3px solid #d8ab1d;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .homepageeight-content .homepageeight-grid {
+      grid-template-columns: 1fr;
+      grid-row-gap: 45px;
+      .homepageeight-box {
+        width: 100%;
+        margin: auto;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: center;
+
+        div {
+          &:nth-child(1) {
+            &::before {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

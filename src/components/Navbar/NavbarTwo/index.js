@@ -24,7 +24,7 @@ const NavbarTwo = () => {
         <div className="navbartwo-searchinput">
           <div>
             <input type="text" placeholder="Qidiruv" />
-            <i class="far fa-search"></i>
+            <i className="far fa-search"></i>
           </div>
         </div>
         <div className="navbartwo-contact">

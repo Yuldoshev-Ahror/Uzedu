@@ -1,0 +1,85 @@
+.homepageten-container {
+  width: 100%;
+  background: url("https://uzedu.uz/images/1519201506_risunok14.jpg") center
+    center/cover;
+  .homepageten-content {
+    max-width: 1140px;
+    width: 100%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    .homepageten-title {
+      padding: 35px 0;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-items: center;
+      align-items: center;
+      padding-top: 20px;
+      padding-bottom: 15px;
+      text-align: center;
+      h3 {
+        color: rgb(128, 128, 128);
+        font-size: 20px;
+        font-weight: 700;
+      }
+      div {
+        width: 12%;
+        border: 2px solid rgb(211, 184, 98);
+      }
+    }
+    .homepageten-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-items: center;
+      align-items: center;
+      P {
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 700;
+        font-style: normal;
+        color: rgb(128, 128, 128);
+      }
+      div {
+        max-width: 500px;
+        width: 90%;
+        display: grid;
+        grid-template-columns: 5fr 2fr;
+        padding: 15px 0;
+        input {
+          width: 100%;
+          height: 100%;
+          font-size: 12px;
+          font-weight: 500;
+          color: #404040;
+          padding: 13px;
+          border: 1px solid #000;
+          border-top-left-radius: 5px;
+          border-bottom-left-radius: 5px;
+          border-right: none;
+          outline: none;
+        }
+        button {
+          width: 100%;
+          height: 100%;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 700;
+          padding: 12px;
+          background-color: rgb(211, 184, 97);
+          color: #fff;
+          border: none;
+          border-top-right-radius: 5px;
+          border-bottom-right-radius: 5px;
+          outline: none;
+          cursor: pointer;
+          &:hover {
+            background-color: #fff;
+            color: rgb(128, 128, 128);
+            border: 1px solid #000;
+          }
+        }
+      }
+    }
+  }
+}

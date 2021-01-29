@@ -1,0 +1,42 @@
+.territorialadministrations-container {
+  width: 100%;
+  .territorialadministrations-content {
+    max-width: 1140px;
+    width: 90%;
+    margin: auto;
+    padding-top: 20px;
+    .territorialadministrations-main {
+      padding: 35px 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 35px;
+      .employeeinfo-box {
+        div:nth-child(2) {
+          padding: 15px 0;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .territorialadministrations-content .territorialadministrations-main {
+      grid-template-columns: 1fr;
+      .employeeinfo-box {
+        div:nth-child(2) {
+          padding: 35px 0;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 425px) {
+    .territorialadministrations-content .territorialadministrations-main {
+      .employeeinfo-box {
+        grid-template-columns: 1fr;
+        div:nth-child(2) {
+          padding: 35px;
+        }
+      }
+    }
+  }
+}

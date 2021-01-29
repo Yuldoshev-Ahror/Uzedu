@@ -4,28 +4,28 @@ import { Link } from "react-router-dom";
 
 const NavbarOne = () => {
   return (
-    <div className="footerone-container">
+    <div className="navbarone-container">
       <div className="navbarone-content">
         <div className="navbarone-topmenu">
           <div className="navbarone-link">
             <div>
               <a href="https://facebook.com" target="_black">
-                <i class="fab fa-facebook-f"></i>
+                <i className="fab fa-facebook-f"></i>
               </a>
             </div>
             <div>
               <a href="https://instagram.com" target="_black">
-                <i class="fab fa-instagram"></i>
+                <i className="fab fa-instagram"></i>
               </a>
             </div>
             <div>
               <a href="https://youtube.com" target="_black">
-                <i class="fab fa-youtube"></i>
+                <i className="fab fa-youtube"></i>
               </a>
             </div>
             <div>
               <a href="https://telegram.org" target="_black">
-                <i class="fab fa-telegram"></i>
+                <i className="fab fa-telegram"></i>
               </a>
             </div>
           </div>

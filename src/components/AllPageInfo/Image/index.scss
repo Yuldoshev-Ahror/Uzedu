@@ -1,0 +1,25 @@
+.allpageinfo-image-container {
+  width: 100%;
+  .allpageinfo-image-content {
+    width: 100%;
+    padding: 35px 0 25px 0;
+    position: relative;
+    z-index: -1;
+    img {
+      width: 100%;
+    }
+    div {
+      position: absolute;
+      right: 0;
+      top: 35px;
+      padding: 15px;
+      background-color: rgb(0, 187, 209);
+      font-size: 20px;
+      color: #fff;
+      p:nth-child(2) {
+        font-size: 11px;
+        color: #fff;
+      }
+    }
+  }
+}

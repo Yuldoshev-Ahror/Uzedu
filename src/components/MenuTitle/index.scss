@@ -1,0 +1,44 @@
+.menutitle-container {
+  width: 100%;
+  .menutitle-content {
+    max-width: 1140px;
+    width: 100%;
+    margin: auto;
+    padding: 15px 0;
+    div {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      z-index: -1;
+      &::before {
+        content: "";
+        display: block;
+        width: 100%;
+        border-bottom: 2px solid rgb(211, 184, 97);
+        position: absolute;
+        top: 30%;
+        left: 0;
+        z-index: -1;
+      }
+      h1 {
+        font-family: "Montserrat", sans-serif;
+        width: auto;
+        border: 2px solid rgb(211, 184, 97);
+        text-align: center;
+        background-color: #fff;
+        color: rgb(85, 85, 85);
+        padding: 5px 17px;
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 34px;
+      }
+    }
+  }
+  @media only screen and (max-width: 425px) {
+    .menutitle-content {
+      width: 100%;
+    }
+  }
+}

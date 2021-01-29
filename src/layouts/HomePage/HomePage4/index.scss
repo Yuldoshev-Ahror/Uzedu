@@ -1,0 +1,66 @@
+.homepagefour-container {
+  width: 100%;
+
+  .homepagefour-content {
+    max-width: 1140px;
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 35px 0;
+
+    .homepagefour-title {
+      display: grid;
+      justify-items: center;
+      align-items: center;
+      padding: 25px 0;
+      h3 {
+        font-size: 20px;
+        color: #6b6b6b;
+        font-weight: 700;
+      }
+      div {
+        width: 12%;
+        border-bottom: 3px solid rgb(211, 184, 98);
+      }
+    }
+
+    .homepagefour-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      color: rgb(211, 184, 98);
+      text-align: center;
+      line-height: 55px;
+      i {
+        font-size: 40px;
+      }
+      h3 {
+        font-size: 40px;
+      }
+      p {
+        font-size: 14px;
+        color: #7f7f7f;
+        font-weight: bold;
+      }
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .homepagefour-content .homepagefour-grid {
+      grid-template-columns: 1fr 1fr;
+      div {
+        padding: 25px;
+      }
+    }
+  }
+  @media only screen and (max-width: 425px) {
+    .homepagefour-content .homepagefour-grid {
+      grid-template-columns: 1fr;
+      div {
+        padding: 35px 0;
+      }
+    }
+    .homepagefour-content {
+      padding: 0;
+    }
+  }
+}

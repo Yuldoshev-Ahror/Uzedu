@@ -1,0 +1,46 @@
+.homepagetwo-container {
+  max-width: 1140px;
+  width: 90%;
+  margin: auto;
+  a {
+    outline: none;
+  }
+  .sliderContainer {
+    width: 100%;
+  }
+  .sliderContainerFluid {
+    width: 100%;
+    margin: auto;
+  }
+  .d-f-center {
+    display: flex;
+    justify-content: center;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+  .marginLeft {
+    padding: 0 15px;
+    outline: none;
+  }
+  .sectionBottom {
+    padding: 20px;
+    position: relative;
+    z-index: 10;
+    background-color: black;
+    opacity: 0.7;
+    height: 90px;
+    color: white;
+    margin-top: -90px;
+  }
+  .textOverflow {
+    text-overflow: ellipsis;
+    // white-space: nowrap;
+    overflow: hidden;
+  }
+  .span-font {
+    font-size: 12px !important;
+    color: #808080 !important;
+  }
+}

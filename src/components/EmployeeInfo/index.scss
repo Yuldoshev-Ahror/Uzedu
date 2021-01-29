@@ -1,0 +1,61 @@
+.employeeinfo-box {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  grid-column-gap: 20px;
+  padding: 9px;
+  border: 1px solid rgb(235, 235, 235);
+  border-radius: 5px;
+  h3 {
+    text-align: center;
+    a {
+      color: rgb(85, 85, 85);
+    }
+    cursor: pointer;
+    font-weight: 600;
+    &:hover {
+      a {
+        color: rgb(115, 115, 115);
+      }
+    }
+  }
+  h5 {
+    color: rgb(128, 128, 128);
+    font-size: 13px;
+    font-weight: 700;
+    padding: 10px 0;
+  }
+  p {
+    color: rgb(128, 128, 128);
+    font-size: 14px;
+    font-weight: 500;
+    padding: 5px 0;
+    a {
+      color: rgb(128, 128, 128);
+      &:hover {
+        color: rgb(59, 59, 59);
+      }
+    }
+  }
+  i {
+    color: rgb(211, 184, 97);
+    font-size: 13px;
+    padding-right: 7px;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+  }
+  & > div:nth-child(1) {
+    border: 2px solid rgb(211, 184, 97);
+    padding: 5px;
+    border-radius: 15px;
+  }
+  div {
+    &:nth-child(1) {
+    }
+    &:nth-child(2) {
+    }
+  }
+}

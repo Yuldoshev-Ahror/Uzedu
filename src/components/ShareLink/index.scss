@@ -1,0 +1,50 @@
+.abouttheministry-bottom {
+  width: 40%;
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 35px 0;
+  & > div:nth-child(1) {
+    font-size: 14px;
+    font-weight: 700;
+    color: #d3b862;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  & > div:nth-child(2) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+  i {
+    font-size: 30px;
+    transition: transform 0.2s ease-in-out;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+  .abouttheministry-facebook {
+    i {
+      color: rgb(69, 99, 158);
+    }
+  }
+  .abouttheministry-vk {
+    i {
+      color: rgb(81, 116, 156);
+    }
+  }
+  .abouttheministry-odnoklassniki {
+    i {
+      color: rgb(250, 137, 15);
+    }
+  }
+  .abouttheministry-telegram {
+    i {
+      color: rgb(0, 136, 204);
+    }
+  }
+  .abouttheministry-print {
+    i {
+      color: rgb(58, 87, 149);
+    }
+  }
+}

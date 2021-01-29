@@ -1,0 +1,82 @@
+.homepagesix-continer {
+  width: 100%;
+  background-image: url("http://uzedu.uz/images/bg/uzbekistan-slide42.jpg");
+  .homepagecontent-content {
+    max-width: 1140px;
+    width: 90%;
+    margin: auto;
+    padding: 30px 0;
+    padding-bottom: 90px;
+
+    .homepagesix-title {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-items: center;
+      align-items: center;
+      padding: 20px 0;
+      h3 {
+        color: #000;
+        font-size: 20px;
+        font-weight: 700;
+      }
+      div {
+        width: 12%;
+        border: 2px solid rgb(211, 184, 98);
+      }
+    }
+
+    .homepagesix-position {
+    }
+
+    .homepagesix-placeholder {
+      background-color: #d5d5d5;
+      padding: 3px 12px;
+
+      border-radius: 3px;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+      background: #fff;
+      font-size: smaller;
+      border: 1px solid #c7c7c7;
+      color: #646060;
+      font-size: 13px;
+      box-shadow: 0 0 10px #999;
+      opacity: 0.9;
+    }
+
+    .homepagesix-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      color: rgb(128, 128, 128);
+      grid-column-gap: 25px;
+      div {
+        line-height: 35px;
+        font-weight: 600;
+        font-size: 14px;
+        a {
+          color: rgb(61, 160, 201);
+        }
+        p:nth-child(1) {
+          font-size: 14px;
+          color: #999;
+        }
+        P:last-child {
+          line-height: 20px;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .homepagecontent-content {
+      .homepagesix-grid {
+        grid-template-columns: 1fr;
+      }
+      .homepagetext-text {
+        text-align: center;
+      }
+    }
+  }
+}

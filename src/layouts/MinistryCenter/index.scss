@@ -1,0 +1,44 @@
+.ministrycenter-container {
+  width: 100%;
+  .ministrycenter-content {
+    max-width: 1140px;
+    width: 90%;
+    margin: auto;
+    padding-top: 20px;
+    .ministrycenter-main {
+      padding: 35px 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 35px;
+      .employeeinfo-box {
+        div:nth-child(2) {
+          padding: 15px 0;
+          p {
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 1024px) {
+    .ministrycenter-content .ministrycenter-main {
+      grid-template-columns: 1fr;
+      .employeeinfo-box {
+        div:nth-child(2) {
+          padding: 35px 0;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 425px) {
+    .ministrycenter-content .ministrycenter-main {
+      .employeeinfo-box {
+        grid-template-columns: 1fr;
+        div:nth-child(2) {
+          padding: 35px;
+        }
+      }
+    }
+  }
+}

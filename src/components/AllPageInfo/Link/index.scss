@@ -1,0 +1,21 @@
+.allpageinfo-link-container {
+  width: 100%;
+  .allpageinfo-link-content {
+    width: 100%;
+    hr {
+      border: none;
+      border-top: 0.5px solid rgb(211, 211, 211);
+      border-width: 0.5px;
+    }
+    a {
+      color: rgb(3, 148, 239);
+      font-weight: 700;
+      font-size: 14px;
+      font-style: normal;
+      line-height: 24px;
+      &:hover {
+        color: rgb(115, 115, 115);
+      }
+    }
+  }
+}
