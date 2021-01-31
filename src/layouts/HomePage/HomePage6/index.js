@@ -33,7 +33,7 @@ const HomePageSix = () => {
   };
 
   const hundelMouseMover = (e) => {
-    setLine([e.pageX + 40, e.pageY - 20]);
+    setLine([e.pageX - 10, e.pageY - 80]);
   };
 
   return (

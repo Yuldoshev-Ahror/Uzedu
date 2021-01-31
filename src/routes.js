@@ -20,6 +20,24 @@ import Statistika from "./layouts/Statistika";
 import AnalyticalData from "./layouts/AnalyticalData";
 import RequiredDocuments from "./layouts/RequiredDocuments";
 import ChildrenCenters from "./layouts/ChildrenCenters";
+import EmbassyOfTheRepublic from "./layouts/EmbassyOfTheRepublic";
+import EGovernment from "./layouts/E-Government";
+import RceivedCommands from "./layouts/RceivedCommands";
+import StateProgram from "./layouts/StateProgram";
+import Vacancies from "./layouts/Vacancies";
+import Choices from "./layouts/Choices";
+import PlansForOpenMeetings from "./layouts/PlansForOpenMeetings";
+import InvestmentPotential from "./layouts/InvestmentPotential";
+import ForForeignCitizens from "./layouts/ForForeignCitizens";
+import LostCertificate from "./layouts/LostCertificate";
+import ForExternalExamination from "./layouts/ForExternalExamination";
+import FromOneInstitution from "./layouts/FromOneInstitution";
+import OpenData from "./layouts/OpenData";
+import PressReleases from "./layouts/PressReleases";
+import OressConferences from "./layouts/OressConferences";
+import FrequentlyAskedQuestions from "./layouts/FrequentlyAskedQuestions";
+import Accreditation from "./layouts/Accreditation";
+import TransparencyOfMinistry from "./layouts/TransparencyOfMinistry";
 
 const Routes = () => {
   return (
@@ -97,6 +115,68 @@ const Routes = () => {
         exact
         component={ChildrenCenters}
       />
+      <Route
+        path="/:lang/vazirlik-ishtirokidagi-xalqaro-shartnomalar"
+        exact
+        component={EmbassyOfTheRepublic}
+      />
+      <Route
+        path="/:lang/elektron-hukumat-tizimida"
+        exact
+        component={EGovernment}
+      />
+      <Route
+        path="/:lang/korrupsiyaga-qarshi-kurash"
+        exact
+        component={RceivedCommands}
+      />
+      <Route path="/:lang/davlat-dasturlari" exact component={StateProgram} />
+      <Route path="/:lang/bosh-ish-orinlari" exact component={Vacancies} />
+      <Route path="/:lang/tanlovlar" exact component={Choices} />
+      <Route
+        path="/:lang/ochiq-majlislar-otkazish-rejalari"
+        exact
+        component={PlansForOpenMeetings}
+      />
+      <Route
+        path="/:lang/investitsiya-salohiyati"
+        exact
+        component={InvestmentPotential}
+      />
+      <Route
+        path="/:lang/bolalarini-maktabga-joylashtirish"
+        exact
+        component={ForForeignCitizens}
+      />
+      <Route
+        path="/:lang/yoqolgan-shahodatnomani-tiklash-uchun-ariza-berish"
+        exact
+        component={LostCertificate}
+      />
+      <Route
+        path="/:lang/eksternat-imtihon-uchun-ariza-berish"
+        exact
+        component={ForExternalExamination}
+      />
+      <Route
+        path="/:lang/oquvchilarni-bitta-talim-muassasasidan-boshqasiga-otkazish"
+        exact
+        component={FromOneInstitution}
+      />
+      <Route path="/:lang/open-data" exact component={OpenData} />
+      <Route path="/:lang/press-relizlar" exact component={PressReleases} />
+      <Route
+        path="/:lang/matbuot-anjumanlari"
+        exact
+        component={OressConferences}
+      />
+      <Route
+        path="/:lang/kop-beriladigan-savollar"
+        exact
+        component={FrequentlyAskedQuestions}
+      />
+      <Route path="/:lang/accreditation" exact component={Accreditation} />
+      <Route path="/:lang/openness" exact component={TransparencyOfMinistry} />
 
       <Route path="/:lang/:page" exact component={TheRestOfThePage} />
       <Route path="/:lang/:page/:info" exact component={AllPageInfo} />
